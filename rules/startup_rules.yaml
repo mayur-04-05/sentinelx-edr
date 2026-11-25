@@ -1,0 +1,11 @@
+rules:
+  - id: RULE_NEW_STARTUP_ENTRY
+    name: New Startup Persistence Registry Entry
+    description: "Detects newly created startup/persistence entries in the Windows registry run keys."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1547.001
+    mitre_tactic: Persistence
+    conditions:
+      event_action:
+        - "ADD_PERSISTENCE"

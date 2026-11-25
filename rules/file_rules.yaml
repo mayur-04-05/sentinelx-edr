@@ -1,0 +1,34 @@
+rules:
+  - id: RULE_FILE_INTEGRITY_CHANGED
+    name: File Integrity Changed (FIM)
+    description: "Detects modifications to registered system files that alter their cryptographic hash signature."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1496
+    mitre_tactic: Impact
+    conditions:
+      event_action:
+        - "MODIFY"
+      fim_alert: true
+
+  - id: RULE_MASS_FILE_MODIFICATION
+    name: Mass File Modification Activity
+    description: "Detects a high frequency of file writes/modifications in a short time frame, indicative of encryption or corruption."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1486
+    mitre_tactic: Impact
+    conditions:
+      time_window_seconds: 10
+      modification_count_threshold: 10
+
+  - id: RULE_MASS_FILE_RENAME
+    name: Mass File Rename Activity
+    description: "Detects rapid renaming of multiple files, typical of ransomware appending extensions."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1486
+    mitre_tactic: Impact
+    conditions:
+      time_window_seconds: 10
+      rename_count_threshold: 5

@@ -1,0 +1,67 @@
+2026-08-23 21:17:34,994 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:17:34,997 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:17:35,082 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Suspicious Process Execution Path)
+2026-08-23 21:17:35,102 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Suspicious Command-Line Parameter)
+2026-08-23 21:18:00,899 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:18:00,902 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:18:00,989 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Suspicious Process Execution Path)
+2026-08-23 21:18:01,012 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Suspicious Command-Line Parameter)
+2026-08-23 21:18:01,232 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:18:01,444 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:18:01,457 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Suspicious Process Execution Path)
+2026-08-23 21:18:01,466 [INFO] httpx: HTTP Request: GET http://testserver/api/incidents/1/process-tree "HTTP/1.1 200 OK"
+2026-08-23 21:18:01,471 [INFO] httpx: HTTP Request: GET http://testserver/api/incidents/1/timeline "HTTP/1.1 200 OK"
+2026-08-23 21:20:07,370 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:20:07,373 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:20:07,646 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:20:07,858 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:20:07,866 [INFO] httpx: HTTP Request: POST http://testserver/api/response "HTTP/1.1 201 Created"
+2026-08-23 21:20:08,200 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:20:08,408 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:20:08,411 [INFO] httpx: HTTP Request: POST http://testserver/api/response "HTTP/1.1 400 Bad Request"
+2026-08-23 21:20:23,693 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:20:23,695 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:20:23,966 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:20:24,176 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:20:24,185 [INFO] httpx: HTTP Request: POST http://testserver/api/response "HTTP/1.1 201 Created"
+2026-08-23 21:20:24,190 [INFO] httpx: HTTP Request: GET http://testserver/api/response/pending/97acac26-40ab-4854-90ea-2046a78f1532 "HTTP/1.1 200 OK"
+2026-08-23 21:20:24,195 [INFO] httpx: HTTP Request: PATCH http://testserver/api/response/1 "HTTP/1.1 200 OK"
+2026-08-23 21:20:24,199 [INFO] httpx: HTTP Request: GET http://testserver/api/audit "HTTP/1.1 200 OK"
+2026-08-23 21:20:24,418 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:20:24,627 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:20:24,631 [INFO] httpx: HTTP Request: POST http://testserver/api/response "HTTP/1.1 400 Bad Request"
+2026-08-23 21:22:35,776 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:22:35,778 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:22:36,066 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:22:36,275 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:22:36,583 [ERROR] sentinelx-backend: AI Assistant failed: 'coroutine' object has no attribute 'status_code'. Falling back to offline analyzer.
+2026-08-23 21:22:36,584 [INFO] httpx: HTTP Request: GET http://testserver/api/ai/investigate/1 "HTTP/1.1 200 OK"
+2026-08-23 21:24:39,056 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:24:39,059 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:24:39,326 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:24:39,538 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:24:42,102 [ERROR] sentinelx-backend: AI Assistant failed: All connection attempts failed. Falling back to offline analyzer.
+2026-08-23 21:24:42,105 [INFO] httpx: HTTP Request: GET http://testserver/api/ai/investigate/1 "HTTP/1.1 200 OK"
+2026-08-23 21:25:49,921 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:25:49,923 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:25:50,203 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/register "HTTP/1.1 201 Created"
+2026-08-23 21:25:50,410 [INFO] httpx: HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2026-08-23 21:25:50,436 [INFO] httpx: HTTP Request: GET http://testserver/api/reports/incident/1 "HTTP/1.1 200 OK"
+2026-08-23 21:35:11,555 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:35:11,557 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:35:31,309 [INFO] sentinelx-backend: Initializing database schemas...
+2026-08-23 21:35:31,312 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-08-23 21:35:53,782 [INFO] sentinelx-correlation: Created new Incident INC-1 for alert 1 (Shell Executable Initiated Network Connection)
+2026-08-23 21:35:53,791 [INFO] sentinelx-backend: Auto-extracted and registered 2 new IOCs from alert 1.
+2026-08-23 21:41:14,617 [INFO] sentinelx-correlation: Correlated alert 2 (Suspicious Process Spawn Chain) into existing Incident INC-1
+2026-08-23 21:41:14,656 [INFO] sentinelx-correlation: Correlated alert 3 (Suspicious Process Spawn Chain) into existing Incident INC-1
+2026-08-23 21:56:55,546 [INFO] sentinelx-correlation: Created new Incident INC-2 for alert 4 (Suspicious Process Spawn Chain)
+2026-08-23 21:56:55,559 [INFO] sentinelx-correlation: Correlated alert 5 (Suspicious Process Spawn Chain) into existing Incident INC-2
+2026-08-23 21:58:00,403 [INFO] sentinelx-correlation: Correlated alert 6 (Suspicious Process Spawn Chain) into existing Incident INC-2
+2026-08-23 21:58:00,431 [INFO] sentinelx-correlation: Correlated alert 7 (Suspicious Process Spawn Chain) into existing Incident INC-2
+2026-11-25 23:36:07,859 [INFO] sentinelx-backend: Initializing database schemas...
+2026-11-25 23:36:07,878 [INFO] sentinelx-backend: Database schemas initialized successfully.
+2026-11-25 23:38:54,996 [INFO] sentinelx-correlation: Created new Incident INC-3 for alert 8 (Suspicious Command-Line Parameter)
+2026-11-25 23:47:21,002 [INFO] sentinelx-correlation: Correlated alert 9 (Suspicious Command-Line Parameter) into existing Incident INC-3
+2026-11-25 23:47:31,464 [INFO] sentinelx-correlation: Correlated alert 10 (Suspicious Command-Line Parameter) into existing Incident INC-3
+2026-11-25 23:47:39,885 [INFO] sentinelx-correlation: Correlated alert 11 (Suspicious Command-Line Parameter) into existing Incident INC-3

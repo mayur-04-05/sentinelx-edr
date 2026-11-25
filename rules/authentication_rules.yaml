@@ -1,0 +1,11 @@
+rules:
+  - id: RULE_REPEATED_AUTH_FAILURES
+    name: Repeated Authentication Failures
+    description: "Detects multiple failed login attempts on the endpoint, indicating a brute-force or credential-stuffing attack."
+    severity: HIGH
+    risk_score: 20
+    mitre_technique: T1110
+    mitre_tactic: Credential Access
+    conditions:
+      time_window_seconds: 30
+      failure_threshold: 3

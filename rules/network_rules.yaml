@@ -1,0 +1,18 @@
+rules:
+  - id: RULE_SUSPICIOUS_NET_PROCESS
+    name: Shell Executable Initiated Network Connection
+    description: "Detects active remote network connections initiated by command shells or system processes."
+    severity: HIGH
+    risk_score: 20
+    mitre_technique: T1043
+    mitre_tactic: Command and Control
+    conditions:
+      process_name:
+        - "powershell.exe"
+        - "cmd.exe"
+        - "wscript.exe"
+        - "cscript.exe"
+        - "lsass.exe"
+      exclude_dest_ips:
+        - "127.0.0.1"
+        - "::1"

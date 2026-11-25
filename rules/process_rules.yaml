@@ -1,0 +1,56 @@
+rules:
+  - id: RULE_SUSPICIOUS_PATH
+    name: Suspicious Process Execution Path
+    description: "Detects process execution originating from temporary, downloads, or sandbox environments combined with suspicious extensions."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1036
+    mitre_tactic: Defense Evasion
+    conditions:
+      exe_contains:
+        - "temp"
+        - "appdata\\local\\temp"
+        - "downloads"
+        - "sentinelx_test_environment"
+      name_matches:
+        - "^suspicious.*"
+        - ".*test.*"
+        - ".*malware.*"
+        
+  - id: RULE_SUSPICIOUS_CHAIN
+    name: Suspicious Process Spawn Chain
+    description: "Detects web browsers or user applications spawning command shells."
+    severity: HIGH
+    risk_score: 25
+    mitre_technique: T1059
+    mitre_tactic: Execution
+    conditions:
+      parent_name:
+        - "chrome.exe"
+        - "firefox.exe"
+        - "msedge.exe"
+        - "explorer.exe"
+      child_name:
+        - "powershell.exe"
+        - "cmd.exe"
+        - "wscript.exe"
+        - "cscript.exe"
+
+  - id: RULE_CMDLINE_PATTERN
+    name: Suspicious Command-Line Parameter
+    description: "Detects execution of PowerShell or CMD with scripts, downloads, or obfuscation arguments."
+    severity: HIGH
+    risk_score: 20
+    mitre_technique: T1059.001
+    mitre_tactic: Execution
+    conditions:
+      cmdline_contains:
+        - "-encodedcommand"
+        - "downloadstring"
+        - "iex"
+        - "-nop"
+        - "-noni"
+        - "bypass"
+        - "invoke-webrequest"
+        - "curl"
+        - "wget"
